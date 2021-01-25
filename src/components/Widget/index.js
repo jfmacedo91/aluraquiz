@@ -20,6 +20,38 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+
+  input {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: ${ ({ theme }) => theme.borderRadius };
+    border: 1px solid ${ ({ theme }) => theme.colors.secondary };
+    color: ${ ({ theme }) => theme.colors.secondary };
+    background-color: ${ ({ theme }) => theme.colors.mainBg };
+    transition: 200ms;
+    outline: none;
+    &:focus {
+      border: 1px solid ${ ({ theme }) => theme.colors.inputBg };
+      color: ${ ({ theme }) => theme.colors.contrastText };
+      background-color: ${ ({ theme }) => theme.colors.inputBg };
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: ${ ({ theme }) => theme.borderRadius };
+    border: none;
+    color: ${ ({ theme }) => theme.colors.contrastText };
+    background-color: ${ ({ theme }) => theme.colors.desabled };
+  }
 `;
 
 Widget.Header = styled.header`

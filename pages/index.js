@@ -25,17 +25,12 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Quiz CSS da Alura</h1>
+            <h1>{ db.title }</h1>
           </Widget.Header>
           <Widget.Container>
-            <h1>Como fazer um seletor por id via CSS?</h1>
-            <p>Essa é pra aquecer</p>
-          </Widget.Container>
-        </Widget>
-        <Widget>
-          <Widget.Container>
-            <h1>Como fazer um background gradiente com css?</h1>
-            <p>Faz tempo em haha</p>
+            <p>{ db.description }</p>
+            <input placeholder="Diz seu nome pra jogar :)" />
+            <button>Jogar</button>
           </Widget.Container>
         </Widget>
         <Footer />
