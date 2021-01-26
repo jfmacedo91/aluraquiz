@@ -1,18 +1,18 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
   padding: 20px;
-  border-radius: ${ ({ theme }) => theme.borderRadius }; 
-  background-color: ${ ({ theme }) => theme.colors.footer };
+  border-radius: ${({ theme }) => theme.borderRadius}; 
+  background-color: ${({ theme }) => theme.colors.footer};
   img {
     width: 58px;
     margin-right: 23px;
   }
   a {
     text-decoration: none;
-    color: ${ ({ theme }) => theme.colors.contrastText };
+    color: ${({ theme }) => theme.colors.contrastText};
     transition: 200ms;
     &:hover,
     &:focus {

@@ -1,11 +1,14 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
-
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -19,8 +22,14 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>AluraQuiz</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -29,13 +38,30 @@ export default function Home() {
           </Widget.Header>
           <Widget.Container>
             <p>{ db.description }</p>
-            <input placeholder="Diz seu nome pra jogar :)" />
-            <button>Jogar</button>
+            {/* eslint-disable-next-line func-names */}
+            <form onSubmit={function (event) {
+              event.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input
+                placeholder="Diz seu nome pra jogar!"
+                // eslint-disable-next-line func-names
+                onChange={function (event) {
+                  setName(event.target.value);
+                }}
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {' '}
+                {name}
+              </button>
+            </form>
           </Widget.Container>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl='https://github.com/JFMacedo/aluraquiz.git' />
+      <GitHubCorner projectUrl="https://github.com/JFMacedo/aluraquiz.git" />
     </QuizBackground>
-  )
+  );
 }

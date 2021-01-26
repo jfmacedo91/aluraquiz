@@ -1,28 +1,42 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
+  "bg": "https://www.pixel4k.com/wp-content/uploads/2018/09/darius-league-of-legends-4k_1537691646.jpg",
+  "title": "Quiz League of Legends",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2020/09/all-league-of-legends-champions.jpg?fit=740%2C393&ssl=1",
+      "title": "Se a vida te der limões, De um soco na cara dela!",
+      "description": "",
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Sett",
+        "Poppy",
+        "Sion",
+        "Ornn"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2020/09/all-league-of-legends-champions.jpg?fit=740%2C393&ssl=1",
+      "title": "Lutando sempre por Demacia",
+      "description": "",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Garen",
+        "Lux",
+        "Fiora",
+        "Sylas"
+      ]
+    },
+    {
+      "image": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2020/09/all-league-of-legends-champions.jpg?fit=740%2C393&ssl=1",
+      "title": "Sucumba!",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+        "Jax",
+        "Elise",
+        "Ornn",
+        "Mordekaiser"
       ]
     }
   ],
@@ -31,14 +45,14 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0D47A1",
-      "secondary": "#29B6F6",
-      "mainBg": "#171B35",
+      "mainBg": "#3B3C3E",
+      "secondary": "#B52A27",
+      "primary": "#150F0E",
       "inputBg": "#FFFFFF33",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#006437",
-      "desabled": "#979797",
+      "disabled": "#979797",
       "footer": "#00000070"
     },
     "borderRadius": "4px"

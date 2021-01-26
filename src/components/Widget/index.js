@@ -3,15 +3,15 @@ import styled from 'styled-components';
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border-radius: ${ ({ theme }) => theme.borderRadius };
-  border: 1px solid ${ ({ theme }) => theme.colors.primary };
-  background-color: ${ ({ theme }) => theme.colors.mainBg };
+  border-radius: ${({ theme }) => theme.borderRadius};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   overflow: hidden;
 
   h1, h2, h3 {
     margin-bottom: 0;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
   }
 
@@ -27,16 +27,15 @@ const Widget = styled.div`
     padding: 8px 16px;
     font-size: 14px;
     line-height: 24px;
-    border-radius: ${ ({ theme }) => theme.borderRadius };
-    border: 1px solid ${ ({ theme }) => theme.colors.secondary };
-    color: ${ ({ theme }) => theme.colors.secondary };
-    background-color: ${ ({ theme }) => theme.colors.mainBg };
+    border-radius: ${({ theme }) => theme.borderRadius};
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.contrastText};
+    background-color: ${({ theme }) => theme.colors.mainBg};
     transition: 200ms;
     outline: none;
     &:focus {
-      border: 1px solid ${ ({ theme }) => theme.colors.inputBg };
-      color: ${ ({ theme }) => theme.colors.contrastText };
-      background-color: ${ ({ theme }) => theme.colors.inputBg };
+      color: ${({ theme }) => theme.colors.contrastText};
+      background-color: ${({ theme }) => theme.colors.inputBg};
     }
   }
 
@@ -44,13 +43,18 @@ const Widget = styled.div`
     width: 100%;
     padding: 10px 16px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 16px;
     text-transform: uppercase;
-    border-radius: ${ ({ theme }) => theme.borderRadius };
+    border-radius: ${({ theme }) => theme.borderRadius};
     border: none;
-    color: ${ ({ theme }) => theme.colors.contrastText };
-    background-color: ${ ({ theme }) => theme.colors.desabled };
+    color: ${({ theme }) => theme.colors.contrastText};
+    background-color: ${({ theme }) => theme.colors.secondary};
+    cursor: pointer;
+    outline: none;
+    &:disabled {
+      background-color: ${({ theme }) => theme.colors.disabled};
+    }
   }
 `;
 
@@ -59,7 +63,7 @@ Widget.Header = styled.header`
   align-items: center;
   justify-content: center;
   padding: 18px 32px;
-  background-color: ${ ({ theme }) => theme.colors.primary };
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 Widget.Container = styled.div`
