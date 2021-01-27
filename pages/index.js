@@ -1,25 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
-import Widget from '../src/components/Widget';
+import Button from '../src/components/Button';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 import QuizBackground from '../src/components/QuizBackground';
+import QuizContainer from '../src/components/QuizContainer';
 import QuizLogo from '../src/components/QuizLogo';
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  margin: auto 10%;
-  padding-top: 45px;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import Widget from '../src/components/Widget';
 
 export default function Home() {
   const router = useRouter();
@@ -38,24 +29,18 @@ export default function Home() {
           </Widget.Header>
           <Widget.Container>
             <p>{ db.description }</p>
-            {/* eslint-disable-next-line func-names */}
-            <form onSubmit={function (event) {
+            <form onSubmit={(event) => {
               event.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input
+              <Input
+                onChange={(event) => { setName(event.target.value); }}
                 placeholder="Diz seu nome pra jogar!"
-                // eslint-disable-next-line func-names
-                onChange={function (event) {
-                  setName(event.target.value);
-                }}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {' '}
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar como: ${name}`}
+              </Button>
             </form>
           </Widget.Container>
         </Widget>

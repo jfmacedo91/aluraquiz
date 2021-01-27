@@ -1,12 +1,12 @@
 {
   "bg": "https://www.pixel4k.com/wp-content/uploads/2018/09/darius-league-of-legends-4k_1537691646.jpg",
   "title": "Quiz League of Legends",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Vamos ver se você descobre de quem são essas frases dos campeões de League of Legends",
   "questions": [
     {
-      "image": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2020/09/all-league-of-legends-champions.jpg?fit=740%2C393&ssl=1",
+      "image": "https://eucontista.files.wordpress.com/2012/11/norris.gif",
       "title": "Se a vida te der limões, De um soco na cara dela!",
-      "description": "",
+      "description": "Qual campeão fala essa frase?",
       "answer": 0,
       "alternatives": [
         "Sett",
@@ -16,9 +16,9 @@
       ]
     },
     {
-      "image": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2020/09/all-league-of-legends-champions.jpg?fit=740%2C393&ssl=1",
+      "image": "https://thumbs.gfycat.com/AcidicWebbedCowbird-max-1mb.gif",
       "title": "Lutando sempre por Demacia",
-      "description": "",
+      "description": "Qual campeão fala essa frase?",
       "answer": 0,
       "alternatives": [
         "Garen",
@@ -28,15 +28,15 @@
       ]
     },
     {
-      "image": "https://i0.wp.com/thegamehaus.com/wp-content/uploads/2020/09/all-league-of-legends-champions.jpg?fit=740%2C393&ssl=1",
-      "title": "Sucumba!",
-      "description": "",
-      "answer": 3,
+      "image": "https://pa1.narvii.com/6595/fdc428d539fc5ae535eeb7940a66e8f7f967637f_hq.gif",
+      "title": "Só é necessario clicar uma vez, tolo!",
+      "description": "Qual campeão fala essa frase?",
+      "answer": 2,
       "alternatives": [
-        "Jax",
-        "Elise",
-        "Ornn",
-        "Mordekaiser"
+        "Thresh",
+        "Lee Sin",
+        "Mardekaiser",
+        "Morgana"
       ]
     }
   ],
@@ -55,6 +55,6 @@
       "disabled": "#979797",
       "footer": "#00000070"
     },
-    "borderRadius": "4px"
+    "borderRadius": "8px"
   }
 }
