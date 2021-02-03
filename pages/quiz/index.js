@@ -2,15 +2,16 @@
 import React from 'react';
 import Head from 'next/head';
 
-import db from '../db.json';
+import db from '../../db.json';
 
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import GitHubCorner from '../src/components/GitHubCorner';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizLogo from '../src/components/QuizLogo';
-import Widget from '../src/components/Widget';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
+import Button from '../../src/components/Button';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import QuizLogo from '../../src/components/QuizLogo';
+import Widget from '../../src/components/Widget';
 
 function WidgetQuestion({
   question, questionIndex, totalQuestions, onSubmit, addResult,
@@ -23,6 +24,7 @@ function WidgetQuestion({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>

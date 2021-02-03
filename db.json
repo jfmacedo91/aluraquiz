@@ -41,7 +41,10 @@
     }
   ],
   "external": [
-    ""
+    "https://1sec-quiz.victoroda.vercel.app/",
+    "https://quiz-valorant.johnatanivini.vercel.app/",
+    "https://pato-quiz-nextjs.theedouglasam.vercel.app/",
+    "https://harry-potter-quiz.brunogerbasi.vercel.app/"
   ],
   "theme": {
     "colors": {
