@@ -46,8 +46,8 @@ npm run dev
 
 
 ## Sobre mim
-<a href="https://www.linkedin.com/in/jean-fernandes-de-macedo-b843a3194/">
- <img style="border-radius:10%" width="100px; "src="https://github.com/jfmacedo.png"/>
+<a href="https://www.linkedin.com/in/jfmacedo91/">
+ <img style="border-radius:10%" width="100px; "src="https://github.com/jfmacedo91.png"/>
  <p>Jean Fernandes de Macedo</p>
 </a>
 
